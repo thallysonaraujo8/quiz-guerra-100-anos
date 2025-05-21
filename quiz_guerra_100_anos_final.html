@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Guerra dos Cem Anos</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        .question { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+        .correct-answer { color: green; font-weight: bold; }
+        .explanation { font-style: italic; margin-top: 5px; color: #555; }
+        #results { margin-top: 20px; font-size: 18px; font-weight: bold; }
+        button { padding: 10px 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Quiz - Guerra dos Cem Anos</h1>
+    <form id="quizForm">
+<div class="question" id="q0">
+<p><strong>1. Quando começou a Guerra dos Cem Anos?</strong></p>
+<label><input type="radio" name="q0" value="0"> 1328</label><br>
+<label><input type="radio" name="q0" value="1"> 1337</label><br>
+<label><input type="radio" name="q0" value="2"> 1346</label><br>
+<label><input type="radio" name="q0" value="3"> 1356</label><br>
+<div class="feedback" id="f0" style="display:none;"><p class="correct-answer">Resposta correta: 1337</p><p class="explanation">A guerra começou em 1337 devido a disputas sucessórias.</p></div>
+</div>
+<div class="question" id="q1">
+<p><strong>2. Qual rei inglês reivindicou o trono francês, iniciando o conflito?</strong></p>
+<label><input type="radio" name="q1" value="0"> Henrique V</label><br>
+<label><input type="radio" name="q1" value="1"> Eduardo III</label><br>
+<label><input type="radio" name="q1" value="2"> João II</label><br>
+<label><input type="radio" name="q1" value="3"> Carlos VII</label><br>
+<div class="feedback" id="f1" style="display:none;"><p class="correct-answer">Resposta correta: Eduardo III</p><p class="explanation">Eduardo III da Inglaterra reivindicou o trono francês.</p></div>
+</div>
+<div class="question" id="q2">
+<p><strong>3. A Batalha de Crécy foi vencida por qual país?</strong></p>
+<label><input type="radio" name="q2" value="0"> França</label><br>
+<label><input type="radio" name="q2" value="1"> Inglaterra</label><br>
+<label><input type="radio" name="q2" value="2"> Espanha</label><br>
+<label><input type="radio" name="q2" value="3"> Borgonha</label><br>
+<div class="feedback" id="f2" style="display:none;"><p class="correct-answer">Resposta correta: Inglaterra</p><p class="explanation">A Inglaterra venceu com uso decisivo de arqueiros.</p></div>
+</div>
+<div class="question" id="q3">
+<p><strong>4. Quem foi capturado na Batalha de Poitiers?</strong></p>
+<label><input type="radio" name="q3" value="0"> Henrique V</label><br>
+<label><input type="radio" name="q3" value="1"> Carlos VII</label><br>
+<label><input type="radio" name="q3" value="2"> João II</label><br>
+<label><input type="radio" name="q3" value="3"> Eduardo III</label><br>
+<div class="feedback" id="f3" style="display:none;"><p class="correct-answer">Resposta correta: João II</p><p class="explanation">O rei francês João II foi capturado.</p></div>
+</div>
+<div class="question" id="q4">
+<p><strong>5. O Tratado de Brétigny favoreceu qual nação?</strong></p>
+<label><input type="radio" name="q4" value="0"> França</label><br>
+<label><input type="radio" name="q4" value="1"> Inglaterra</label><br>
+<label><input type="radio" name="q4" value="2"> Espanha</label><br>
+<label><input type="radio" name="q4" value="3"> Alemanha</label><br>
+<div class="feedback" id="f4" style="display:none;"><p class="correct-answer">Resposta correta: Inglaterra</p><p class="explanation">A Inglaterra ganhou vastos territórios com o tratado.</p></div>
+</div>
+<div class="question" id="q5">
+<p><strong>6. Qual rei francês liderou a retomada contra os ingleses na segunda fase?</strong></p>
+<label><input type="radio" name="q5" value="0"> Carlos V</label><br>
+<label><input type="radio" name="q5" value="1"> Carlos VII</label><br>
+<label><input type="radio" name="q5" value="2"> João II</label><br>
+<label><input type="radio" name="q5" value="3"> Felipe VI</label><br>
+<div class="feedback" id="f5" style="display:none;"><p class="correct-answer">Resposta correta: Carlos V</p><p class="explanation">Carlos V iniciou a reconquista francesa.</p></div>
+</div>
+<div class="question" id="q6">
+<p><strong>7. A Batalha de Azincourt ocorreu em que ano?</strong></p>
+<label><input type="radio" name="q6" value="0"> 1346</label><br>
+<label><input type="radio" name="q6" value="1"> 1356</label><br>
+<label><input type="radio" name="q6" value="2"> 1415</label><br>
+<label><input type="radio" name="q6" value="3"> 1431</label><br>
+<div class="feedback" id="f6" style="display:none;"><p class="correct-answer">Resposta correta: 1415</p><p class="explanation">A batalha ocorreu em 1415 com vitória inglesa.</p></div>
+</div>
+<div class="question" id="q7">
+<p><strong>8. Quem foi coroado rei com a ajuda de Joana d’Arc?</strong></p>
+<label><input type="radio" name="q7" value="0"> Carlos V</label><br>
+<label><input type="radio" name="q7" value="1"> Carlos VI</label><br>
+<label><input type="radio" name="q7" value="2"> Carlos VII</label><br>
+<label><input type="radio" name="q7" value="3"> Luís XI</label><br>
+<div class="feedback" id="f7" style="display:none;"><p class="correct-answer">Resposta correta: Carlos VII</p><p class="explanation">Carlos VII foi coroado após o cerco de Orléans.</p></div>
+</div>
+<div class="question" id="q8">
+<p><strong>9. Quando Joana d’Arc foi executada?</strong></p>
+<label><input type="radio" name="q8" value="0"> 1429</label><br>
+<label><input type="radio" name="q8" value="1"> 1431</label><br>
+<label><input type="radio" name="q8" value="2"> 1453</label><br>
+<label><input type="radio" name="q8" value="3"> 1400</label><br>
+<div class="feedback" id="f8" style="display:none;"><p class="correct-answer">Resposta correta: 1431</p><p class="explanation">Ela foi capturada e queimada em 1431.</p></div>
+</div>
+<div class="question" id="q9">
+<p><strong>10. Qual foi a última grande batalha da guerra?</strong></p>
+<label><input type="radio" name="q9" value="0"> Poitiers</label><br>
+<label><input type="radio" name="q9" value="1"> Crécy</label><br>
+<label><input type="radio" name="q9" value="2"> Azincourt</label><br>
+<label><input type="radio" name="q9" value="3"> Castillon</label><br>
+<div class="feedback" id="f9" style="display:none;"><p class="correct-answer">Resposta correta: Castillon</p><p class="explanation">A Batalha de Castillon marcou o fim da guerra.</p></div>
+</div>
+<div class="question" id="q10">
+<p><strong>11. Qual cidade permaneceu inglesa após 1453?</strong></p>
+<label><input type="radio" name="q10" value="0"> Paris</label><br>
+<label><input type="radio" name="q10" value="1"> Orléans</label><br>
+<label><input type="radio" name="q10" value="2"> Calais</label><br>
+<label><input type="radio" name="q10" value="3"> Bordéus</label><br>
+<div class="feedback" id="f10" style="display:none;"><p class="correct-answer">Resposta correta: Calais</p><p class="explanation">Calais foi mantida pelos ingleses até 1558.</p></div>
+</div>
+<div class="question" id="q11">
+<p><strong>12. Qual a principal arma usada pelos ingleses nas vitórias iniciais?</strong></p>
+<label><input type="radio" name="q11" value="0"> Espadas</label><br>
+<label><input type="radio" name="q11" value="1"> Canhões</label><br>
+<label><input type="radio" name="q11" value="2"> Arqueiros</label><br>
+<label><input type="radio" name="q11" value="3"> Cavalaria pesada</label><br>
+<div class="feedback" id="f11" style="display:none;"><p class="correct-answer">Resposta correta: Arqueiros</p><p class="explanation">Arqueiros de longo alcance foram decisivos.</p></div>
+</div>
+<div class="question" id="q12">
+<p><strong>13. O Tratado de Troyes beneficiou qual rei?</strong></p>
+<label><input type="radio" name="q12" value="0"> Carlos V</label><br>
+<label><input type="radio" name="q12" value="1"> Henrique V</label><br>
+<label><input type="radio" name="q12" value="2"> Carlos VII</label><br>
+<label><input type="radio" name="q12" value="3"> João II</label><br>
+<div class="feedback" id="f12" style="display:none;"><p class="correct-answer">Resposta correta: Henrique V</p><p class="explanation">Henrique V foi nomeado herdeiro do trono francês.</p></div>
+</div>
+<div class="question" id="q13">
+<p><strong>14. O que motivou a guerra inicialmente?</strong></p>
+<label><input type="radio" name="q13" value="0"> Conflito econômico</label><br>
+<label><input type="radio" name="q13" value="1"> Disputa religiosa</label><br>
+<label><input type="radio" name="q13" value="2"> Sucessão ao trono francês</label><br>
+<label><input type="radio" name="q13" value="3"> Colonialismo</label><br>
+<div class="feedback" id="f13" style="display:none;"><p class="correct-answer">Resposta correta: Sucessão ao trono francês</p><p class="explanation">A disputa pela sucessão do trono francês foi a causa principal.</p></div>
+</div>
+<div class="question" id="q14">
+<p><strong>15. Joana d’Arc alegava ter recebido uma missão de quem?</strong></p>
+<label><input type="radio" name="q14" value="0"> Do Papa</label><br>
+<label><input type="radio" name="q14" value="1"> De Deus</label><br>
+<label><input type="radio" name="q14" value="2"> Do rei</label><br>
+<label><input type="radio" name="q14" value="3"> De seu pai</label><br>
+<div class="feedback" id="f14" style="display:none;"><p class="correct-answer">Resposta correta: De Deus</p><p class="explanation">Ela acreditava ter uma missão divina.</p></div>
+</div>
+<div class="question" id="q15">
+<p><strong>16. Quem era o rei francês quando Henrique V invadiu em 1415?</strong></p>
+<label><input type="radio" name="q15" value="0"> Carlos V</label><br>
+<label><input type="radio" name="q15" value="1"> Carlos VI</label><br>
+<label><input type="radio" name="q15" value="2"> Carlos VII</label><br>
+<label><input type="radio" name="q15" value="3"> Felipe VI</label><br>
+<div class="feedback" id="f15" style="display:none;"><p class="correct-answer">Resposta correta: Carlos VI</p><p class="explanation">Carlos VI estava no trono durante a invasão de Henrique V.</p></div>
+</div>
+<div class="question" id="q16">
+<p><strong>17. A guerra terminou em que ano?</strong></p>
+<label><input type="radio" name="q16" value="0"> 1445</label><br>
+<label><input type="radio" name="q16" value="1"> 1453</label><br>
+<label><input type="radio" name="q16" value="2"> 1460</label><br>
+<label><input type="radio" name="q16" value="3"> 1475</label><br>
+<div class="feedback" id="f16" style="display:none;"><p class="correct-answer">Resposta correta: 1453</p><p class="explanation">A guerra terminou em 1453.</p></div>
+</div>
+<div class="question" id="q17">
+<p><strong>18. Quem modernizou o exército francês no final do conflito?</strong></p>
+<label><input type="radio" name="q17" value="0"> Joana d’Arc</label><br>
+<label><input type="radio" name="q17" value="1"> Henrique V</label><br>
+<label><input type="radio" name="q17" value="2"> Carlos VII</label><br>
+<label><input type="radio" name="q17" value="3"> Eduardo III</label><br>
+<div class="feedback" id="f17" style="display:none;"><p class="correct-answer">Resposta correta: Carlos VII</p><p class="explanation">Carlos VII reformou o exército francês.</p></div>
+</div>
+<div class="question" id="q18">
+<p><strong>19. Qual destas guerras foi influenciada pela Guerra dos Cem Anos?</strong></p>
+<label><input type="radio" name="q18" value="0"> Guerra das Rosas</label><br>
+<label><input type="radio" name="q18" value="1"> Guerra Civil Espanhola</label><br>
+<label><input type="radio" name="q18" value="2"> Guerra dos Trinta Anos</label><br>
+<label><input type="radio" name="q18" value="3"> Guerra da Sucessão</label><br>
+<div class="feedback" id="f18" style="display:none;"><p class="correct-answer">Resposta correta: Guerra das Rosas</p><p class="explanation">A Inglaterra entrou em crise interna após a guerra, levando à Guerra das Rosas.</p></div>
+</div>
+<div class="question" id="q19">
+<p><strong>20. Qual o principal efeito da guerra na França?</strong></p>
+<label><input type="radio" name="q19" value="0"> Descentralização do poder</label><br>
+<label><input type="radio" name="q19" value="1"> Perda de território</label><br>
+<label><input type="radio" name="q19" value="2"> Fortalecimento da monarquia</label><br>
+<label><input type="radio" name="q19" value="3"> Fim do cristianismo</label><br>
+<div class="feedback" id="f19" style="display:none;"><p class="correct-answer">Resposta correta: Fortalecimento da monarquia</p><p class="explanation">A guerra fortaleceu o Estado e a identidade nacional francesa.</p></div>
+</div>
+
+    <button type="button" onclick="checkAnswers()">Verificar Respostas</button>
+    <div id="results"></div>
+    </form>
+    <script>
+        function checkAnswers() {
+            let correct = 0;
+            const answers = [1,1,1,2,1,0,2,2,1,3,2,2,1,2,1,1,1,2,0,2];
+            for (let i = 0; i < answers.length; i++) {
+                const radios = document.getElementsByName('q' + i);
+                for (let r = 0; r < radios.length; r++) {
+                    if (radios[r].checked) {
+                        if (parseInt(radios[r].value) === answers[i]) {
+                            correct++;
+                        }
+                    }
+                }
+                document.getElementById('f' + i).style.display = 'block';
+            }
+            document.getElementById('results').innerText = "Você acertou " + correct + " de " + answers.length + " perguntas.";
+        }
+    </script>
+</body>
+</html>
